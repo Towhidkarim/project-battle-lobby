@@ -7,12 +7,7 @@ import {
 } from '@/components/ui/tooltip';
 import { TLobbyRegistrationData } from '@/lib/types';
 import { cn } from '@/lib/utils';
-import { redirect } from 'next/navigation';
-import CsvDownloader from 'react-csv-downloader';
-// import DownloadButton from './DownloadButton';
-import { CSVLink } from 'react-csv';
 import DownloadButton from './DownloadButton';
-import { utils, writeFile } from 'xlsx';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 const LobbyInfo = ({

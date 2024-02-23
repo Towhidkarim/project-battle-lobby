@@ -1,6 +1,5 @@
 'use client';
 import { TLobbyRegistrationData } from '@/lib/types';
-import { CSVLink } from 'react-csv';
 import { utils, writeFile } from 'xlsx';
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
