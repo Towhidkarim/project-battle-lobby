@@ -1,5 +1,3 @@
-import Home from '@/components/Dashboard/DashboardTabs/Home';
-
 export const MenuItems = [
   { title: 'Home', url: '/' },
   { title: 'Dashboard', url: '/' },
