@@ -3,10 +3,10 @@ import React from 'react';
 import { Button } from '../../ui/button';
 import ImageSlideshow from './ImageSlideshow';
 import Link from 'next/link';
-import { auth } from '@/auth';
+import { useSession } from 'next-auth/react';
 
-const Hero = async () => {
-  const session = await auth();
+const Hero = () => {
+  const { status } = useSession();
   return (
     <section className='container mx-auto'>
       <div className='flex gap-20 md:flex-row flex-col justify-center items-center w-full md:min-h-[500px] min-h-[400px]'>
@@ -18,7 +18,7 @@ const Hero = async () => {
             Make money doing what you love
           </p>
           <Button className='text-lg rounded-xl p-6 text-foreground' asChild>
-            {!session ? (
+            {status !== 'authenticated' ? (
               <Link href='/user/signup'>Sign Up Now!</Link>
             ) : (
               <Link href='/dashboard'>Go to Dashboard</Link>
