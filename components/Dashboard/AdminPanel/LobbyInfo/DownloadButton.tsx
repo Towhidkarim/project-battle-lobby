@@ -2,7 +2,6 @@
 import { TLobbyRegistrationData } from '@/lib/types';
 import { CSVLink } from 'react-csv';
 import { utils, writeFile } from 'xlsx';
-import CsvDownload from 'react-csv-downloader';
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
 import { FetchLobbieyWithID } from '@/lib/actions/FetchLobbyWithID';
