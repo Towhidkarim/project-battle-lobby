@@ -19,8 +19,7 @@ export async function LoginAuth(
     await signIn('credentials', {
       email,
       password,
-      redirect: true,
-      redirectTo: '/',
+      redirect: false,
     });
     return { status: 'success', ok: true };
   } catch (error) {

@@ -4,6 +4,9 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import { auth } from '@/auth';
 import { SessionProvider } from 'next-auth/react';
+import { Toaster } from '@/components/ui/sonner';
+// import LoadingBar from '@/components/LoadingBar';
+import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({ subsets: ['latin'] });
 const poppins = Poppins({
@@ -28,7 +31,10 @@ export default async function RootLayout({
     <SessionProvider session={session}>
       <html lang='en'>
         <body className={cn(poppins.className, 'dark text-foreground')}>
+          {/* <LoadingBar /> */}
+          <NextTopLoader color='#2563EB' height={2} />
           {children}
+          <Toaster />
         </body>
       </html>
     </SessionProvider>

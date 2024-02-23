@@ -32,3 +32,12 @@ export const SignUpSchema = z
     path: ['confirmPassword'],
     message: 'Passwords does not match',
   });
+
+export const UserCompletionSchema = z.object({
+  ign: z.string().min(3),
+  uid: z.string().min(3),
+  phoneNumber: z
+    .string()
+    .length(11, { message: '11 digits required' })
+    .regex(phoneNumberRegEx, 'Invalid Mobile Number'),
+});

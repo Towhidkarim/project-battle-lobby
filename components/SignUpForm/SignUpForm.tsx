@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { LoginAuth } from '@/lib/actions/LoginAuth';
+import { toast } from 'sonner';
 import { useRouter } from 'next/navigation';
 import {
   Form,
@@ -36,7 +37,15 @@ const SignUpForm = () => {
     startTransition(() => {
       const res = SignUpAuth(values);
       res.then((result) => {
-        // if (!result?.ok) router.push('/');
+        if (result?.ok) {
+          toast('Registration Succesful!', {
+            description: 'Redirecting to Login Page',
+          });
+          router.push('/user/signin');
+        } else
+          toast('Error Occured', {
+            description: result.messege,
+          });
       });
     });
   };

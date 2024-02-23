@@ -1,10 +1,10 @@
-import FAQsection from '@/components/FAQ/FAQsection';
-import FooterSection from '@/components/Footer/FooterSection';
-import Hero from '@/components/Hero/Hero';
-import MobileApp from '@/components/MobileApp/MobileApp';
+import FAQsection from '@/components/LandingPage/FAQ/FAQsection';
+import FooterSection from '@/components/LandingPage/Footer/FooterSection';
+import Hero from '@/components/LandingPage/Hero/Hero';
+import MobileApp from '@/components/LandingPage/MobileApp/MobileApp';
 import Navbar from '@/components/NavBar/Navbar';
-import SubHero from '@/components/SubHero/SubHero';
-import TopUpHome from '@/components/TopUp/TopUpHome';
+import SubHero from '@/components/LandingPage/SubHero/SubHero';
+import TopUpHome from '@/components/LandingPage/TopUp/TopUpHome';
 import Image from 'next/image';
 
 export default function Home() {

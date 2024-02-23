@@ -9,7 +9,8 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { LoginAuth } from '@/lib/actions/LoginAuth';
-import { useRouter } from 'next/navigation';
+import { toast } from 'sonner';
+import { redirect, useRouter } from 'next/navigation';
 import {
   Form,
   FormControl,
@@ -36,7 +37,13 @@ const SignInForm = () => {
     startTransition(() => {
       const res = LoginAuth(values);
       res.then((result) => {
-        if (!result?.ok) router.push('/');
+        if (result?.ok) {
+          toast('Login Succesful', {
+            description: 'Redirecting to Dashboard',
+            duration: 3000,
+          });
+          router.push('/dashboard');
+        }
       });
     });
   };
@@ -52,7 +59,6 @@ const SignInForm = () => {
         <h1 className='absolute top-10 mx-auto text-3xl font-semibold'>
           Sign In
         </h1>
-        <h1 className='absolute left-10'>Home</h1>
         <FormField
           control={form.control}
           name='email'

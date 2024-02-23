@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Button } from '../ui/button';
+import { Button } from '../../ui/button';
 import { TbCurrencyTaka } from 'react-icons/tb';
 import { cn } from '@/lib/utils';
 

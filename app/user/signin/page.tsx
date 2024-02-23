@@ -24,6 +24,7 @@ const Home = async () => {
           <h1 className='text-5xl text-center font-semibold py-2'>
             Welcome to BattleLobby
           </h1>
+          {/* <h1 className='absolute left-10'>Home</h1> */}
           <p>Not a user? Register now!</p> <br />
           <Button className='rounded-xl p-5 text-lg font-semibold shadow-lg'>
             <Link href='/user/signup'>Sign up</Link>

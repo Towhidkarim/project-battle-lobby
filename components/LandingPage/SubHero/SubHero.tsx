@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaUser, FaGamepad, FaMoneyCheckAlt } from 'react-icons/fa';
 import { HiUserGroup } from 'react-icons/hi2';
-import { Button } from '../ui/button';
+import { Button } from '../../ui/button';
 
 const cardContent = [
   {
