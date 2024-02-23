@@ -20,7 +20,8 @@ const CountDown = ({ endTime }: { endTime: Date }) => {
     };
   }, []);
 
-  if (endTime.getTime() - Date.now() < 0) return <span>Lobby Started!</span>;
+  if (endTime.getTime() - Date.now() < 0)
+    return <span className='md:text-base text-sm'>Lobby Started!</span>;
 
   return (
     <span suppressHydrationWarning>

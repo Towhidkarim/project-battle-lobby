@@ -29,7 +29,7 @@ const SideMenu = ({
         Battle
         <span className='font-semibold'>Lobby</span>
       </h1>
-      <span className='h-20' />
+      <span className='h-10' />
       <Avatar className='w-20 h-20 text-4xl'>
         <AvatarFallback>{userName[0]}</AvatarFallback>
       </Avatar>
@@ -53,7 +53,7 @@ const SideMenu = ({
           Admin Panel
         </Link>
       </Button>
-      <span className='h-12' />
+      <span className='h-6' />
       <div className='flex flex-col w-full justify-start items-center'>
         {/* <TabsTrigger
           value='Home'

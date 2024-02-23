@@ -7,7 +7,7 @@ import { TLobby, TUser } from '@/lib/types';
 import { format } from 'date-fns';
 import CodeDisplay from './CodeDisplay';
 
-const LobbyBanner = async ({
+const LobbyBanner = ({
   lobbyData,
   userData,
 }: {
@@ -45,7 +45,7 @@ const LobbyBanner = async ({
 
   return (
     <label className='group relative'>
-      <div className='mx-5 select-none cursor-pointer group-active:opacity-90 transition-all outline-foreground/30 relative border rounded-xl min-h-52 min-w-[80%] border-border overflow-hidden'>
+      <div className='mx-5 select-none cursor-pointer group-active:opacity-90 transition-all outline-foreground/30 relative border rounded-xl min-h-60 min-w-[80%] border-border overflow-hidden'>
         <Image
           alt='lobby'
           src={demoBanner}
@@ -54,9 +54,9 @@ const LobbyBanner = async ({
         <div className=' bg-gradient-to-r  from-black to-white h-full absolute w-full opacity-60'></div>
         <div className='p-4 z-10 absolute top-0 h-full flex flex-col justify-between w-full'>
           <h1 className='font-bold my-2 text-2xl capitalize'>{lobbyTitle}</h1>
-          <p>{caption}</p>
+          <p className='my-2'>{caption}</p>
           <div className='w-full flex justify-between items-center'>
-            <div className='font-semibold bg-background/60 md:text-lg outline outline-1 outline-foreground/40 rounded-full p-1 px-4 md:min-w-52 w-48 text-center '>
+            <div className='font-semibold text-base bg-background/60 md:text-lg outline outline-1 outline-foreground/40 rounded-2xl p-1 px-4 md:min-w-52 w-48 text-center '>
               <CountDown endTime={lobbyStartTime} />
             </div>
             <div className='flex text-sm gap-2 justify-center items-center'>
@@ -64,7 +64,7 @@ const LobbyBanner = async ({
                 {tags?.map((value, index) => (
                   <span
                     key={index}
-                    className='bg-muted text-foreground px-4 font-semibold rounded-2xl p-0.5'
+                    className='bg-muted text-foreground px-4 font-semibold rounded-2xl p-0.5 uppercase'
                   >
                     {value}
                   </span>

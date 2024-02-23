@@ -1,0 +1,90 @@
+"filename", "language", "TypeScript", "JSON with Comments", "Markdown", "JavaScript", "JSON", "XML", "TypeScript JSX", "YAML", "CSS", "comment", "blank", "total"
+"s:\ProjectFiles\React\project-battle-lobby\README.md", "Markdown", 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 14, 37
+"s:\ProjectFiles\React\project-battle-lobby\app\(protected)\administration\lobbydata\[id]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 36, 0, 0, 2, 4, 42
+"s:\ProjectFiles\React\project-battle-lobby\app\(protected)\administration\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 74, 0, 0, 0, 7, 81
+"s:\ProjectFiles\React\project-battle-lobby\app\(protected)\dashboard\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 71, 0, 0, 1, 5, 77
+"s:\ProjectFiles\React\project-battle-lobby\app\api\auth\[...nextauth]\route.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2
+"s:\ProjectFiles\React\project-battle-lobby\app\globals.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 48, 0, 4, 52
+"s:\ProjectFiles\React\project-battle-lobby\app\layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 35, 0, 0, 3, 5, 43
+"s:\ProjectFiles\React\project-battle-lobby\app\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 2, 29
+"s:\ProjectFiles\React\project-battle-lobby\app\user\signin\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 38, 0, 0, 1, 3, 42
+"s:\ProjectFiles\React\project-battle-lobby\app\user\signup\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 38, 0, 0, 0, 4, 42
+"s:\ProjectFiles\React\project-battle-lobby\auth.config.ts", "TypeScript", 39, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 43
+"s:\ProjectFiles\React\project-battle-lobby\auth.ts", "TypeScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 28
+"s:\ProjectFiles\React\project-battle-lobby\components.json", "JSON", 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 17
+"s:\ProjectFiles\React\project-battle-lobby\components\AuthProvider.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 3, 10
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\CreateEvent\CreateEvent.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 3, 14
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\CreateEvent\EventForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 180, 0, 0, 42, 9, 231
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\LobbyInfo\DownloadButton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 38, 0, 0, 0, 4, 42
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\LobbyInfo\LobbyInfo.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 108, 0, 0, 10, 6, 124
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\ViewLobbies\LobbyTable.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 98, 0, 0, 0, 3, 101
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\ViewLobbies\ModifyDilaogue.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 105, 0, 0, 1, 6, 112
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\ViewLobbies\ViewLobbies.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 17, 0, 0, 0, 3, 20
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\DashboardNav\DashboardNav.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 26, 0, 0, 1, 3, 30
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\DashboardTabs\DashboardHome.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 32, 0, 0, 2, 3, 37
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\DashboardTabs\EditProfile\EditForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 95, 0, 0, 3, 6, 104
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\DashboardTabs\EditProfile\EditProfile.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 16, 0, 0, 9, 4, 29
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\LobbyBanner\CodeDisplay.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 47, 0, 0, 0, 3, 50
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\LobbyBanner\CountDown.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 28, 0, 0, 0, 8, 36
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\LobbyBanner\EntranceDialogue.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 80, 0, 0, 0, 3, 83
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\LobbyBanner\LobbyBanner.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 109, 0, 0, 1, 4, 114
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\SideMenu\SideMenu.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 83, 0, 0, 12, 6, 101
+"s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\SideMenu\SlideMenu.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 48, 0, 0, 7, 2, 57
+"s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\FAQ\FAQsection.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 30, 0, 0, 0, 3, 33
+"s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\Footer\FooterSection.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 29, 0, 0, 0, 3, 32
+"s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\Hero\Hero.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 3, 30
+"s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\Hero\ImageSlideshow.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 65, 0, 0, 4, 9, 78
+"s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\MobileApp\MobileApp.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 3, 13
+"s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\SubHero\SubHero.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 58, 0, 0, 0, 4, 62
+"s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\TopUp\TopUpCard.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 74, 0, 0, 0, 4, 78
+"s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\TopUp\TopUpHome.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 3, 21
+"s:\ProjectFiles\React\project-battle-lobby\components\NavBar\MobileMenu.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 47, 0, 0, 5, 3, 55
+"s:\ProjectFiles\React\project-battle-lobby\components\NavBar\Navbar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 3, 67
+"s:\ProjectFiles\React\project-battle-lobby\components\NavBar\UserSection.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 3, 34
+"s:\ProjectFiles\React\project-battle-lobby\components\SignInForm\SignInForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 113, 0, 0, 0, 6, 119
+"s:\ProjectFiles\React\project-battle-lobby\components\SignUpForm\SignUpForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 162, 0, 0, 0, 7, 169
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\accordion.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 8, 58
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\alert-dialog.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 127, 0, 0, 0, 15, 142
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\avatar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 7, 51
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\button.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 51, 0, 0, 0, 6, 57
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\calendar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 67, 0, 0, 0, 6, 73
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\card.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 68, 0, 0, 0, 9, 77
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\carousel.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 232, 0, 0, 0, 31, 263
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\dialog.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 109, 0, 0, 0, 14, 123
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\form.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 152, 0, 0, 0, 25, 177
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\input.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 5, 26
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\label.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 6, 27
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\popover.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 8, 34
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\scroll-area.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 43, 0, 0, 0, 6, 49
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\select.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 151, 0, 0, 0, 14, 165
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\sheet.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 125, 0, 0, 0, 16, 141
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\sonner.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 6, 32
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\switch.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 5, 30
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\table.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 110, 0, 0, 0, 11, 121
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\tabs.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 45, 0, 0, 3, 8, 56
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\ticket-chip.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 3, 28
+"s:\ProjectFiles\React\project-battle-lobby\components\ui\tooltip.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 23, 0, 0, 0, 8, 31
+"s:\ProjectFiles\React\project-battle-lobby\environments.d.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 12
+"s:\ProjectFiles\React\project-battle-lobby\lib\actions\CreateLobby.ts", "TypeScript", 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 50
+"s:\ProjectFiles\React\project-battle-lobby\lib\actions\EditProfile.ts", "TypeScript", 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 36
+"s:\ProjectFiles\React\project-battle-lobby\lib\actions\FetchLobbies.ts", "TypeScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 24
+"s:\ProjectFiles\React\project-battle-lobby\lib\actions\FetchLobbyWithID.ts", "TypeScript", 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 28
+"s:\ProjectFiles\React\project-battle-lobby\lib\actions\JoinLobby.ts", "TypeScript", 59, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 67
+"s:\ProjectFiles\React\project-battle-lobby\lib\actions\LoginAuth.ts", "TypeScript", 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 29
+"s:\ProjectFiles\React\project-battle-lobby\lib\actions\ModifyLobby.ts", "TypeScript", 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 49
+"s:\ProjectFiles\React\project-battle-lobby\lib\actions\SignUpAuth.ts", "TypeScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 41
+"s:\ProjectFiles\React\project-battle-lobby\lib\constants.ts", "TypeScript", 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 68
+"s:\ProjectFiles\React\project-battle-lobby\lib\mongoDB\database.ts", "TypeScript", 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"s:\ProjectFiles\React\project-battle-lobby\lib\mongoDB\dbmodels.ts", "TypeScript", 46, 0, 0, 0, 0, 0, 0, 0, 0, 8, 6, 60
+"s:\ProjectFiles\React\project-battle-lobby\lib\types.ts", "TypeScript", 58, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 64
+"s:\ProjectFiles\React\project-battle-lobby\lib\utils.ts", "TypeScript", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 16
+"s:\ProjectFiles\React\project-battle-lobby\next.config.mjs", "JavaScript", 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 2, 5
+"s:\ProjectFiles\React\project-battle-lobby\package.json", "JSON", 0, 0, 0, 0, 61, 0, 0, 0, 0, 0, 1, 62
+"s:\ProjectFiles\React\project-battle-lobby\pnpm-lock.yaml", "YAML", 0, 0, 0, 0, 0, 0, 0, 2248, 0, 0, 273, 2521
+"s:\ProjectFiles\React\project-battle-lobby\postcss.config.js", "JavaScript", 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 1, 7
+"s:\ProjectFiles\React\project-battle-lobby\public\next.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"s:\ProjectFiles\React\project-battle-lobby\public\vercel.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"s:\ProjectFiles\React\project-battle-lobby\schemas\UserSchemas.ts", "TypeScript", 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 44
+"s:\ProjectFiles\React\project-battle-lobby\tailwind.config.ts", "TypeScript", 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 80
+"s:\ProjectFiles\React\project-battle-lobby\tsconfig.json", "JSON with Comments", 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 1, 27
+"Total", "-", 662, 26, 23, 8, 78, 2, 3716, 2248, 48, 124, 751, 7686

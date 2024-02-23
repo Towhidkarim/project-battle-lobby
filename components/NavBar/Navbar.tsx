@@ -28,7 +28,7 @@ const Navbar = () => {
             className='font-bold rounded-xl lg:text-xl text-lg text-foreground/70'
             asChild
           >
-            <Link href='/'>Schedule</Link>
+            <Link href='/dashboard'>Schedule</Link>
           </Button>
           <Button
             variant='ghost'
@@ -39,7 +39,7 @@ const Navbar = () => {
           </Button>
         </div>
         <div className='flex flex-row gap-2'>
-          <div className='flex md:text-lg text-base justify-center items-center gap-2 relative m-auto mx-4 group cursor-pointer active:opacity-90 transition'>
+          {/* <div className='flex md:text-lg text-base justify-center items-center gap-2 relative m-auto mx-4 group cursor-pointer active:opacity-90 transition'>
             Language
             <span className='group-hover:rotate-180 transition'>
               <FaAngleDown />
@@ -55,7 +55,7 @@ const Navbar = () => {
                 BN
               </Button>
             </div>
-          </div>
+          </div> */}
           <UserSection />
         </div>
       </div>

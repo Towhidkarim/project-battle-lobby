@@ -1,0 +1,165 @@
+Date : 2024-02-23 22:53:07
+Directory : s:\ProjectFiles\React\project-battle-lobby
+Total : 88 files,  6811 codes, 124 comments, 751 blanks, all 7686 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| TypeScript JSX     |         59 |      3,716 |        107 |        380 |      4,203 |
+| YAML               |          1 |      2,248 |          0 |        273 |      2,521 |
+| TypeScript         |         19 |        662 |         16 |         75 |        753 |
+| JSON               |          2 |         78 |          0 |          1 |         79 |
+| CSS                |          1 |         48 |          0 |          4 |         52 |
+| JSON with Comments |          1 |         26 |          0 |          1 |         27 |
+| Markdown           |          1 |         23 |          0 |         14 |         37 |
+| JavaScript         |          2 |          8 |          1 |          3 |         12 |
+| XML                |          2 |          2 |          0 |          0 |          2 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                      | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                         |         88 |      6,811 |        124 |        751 |      7,686 |
+| . (Files)                                                                                                 |         11 |      2,529 |          7 |        303 |      2,839 |
+| app                                                                                                       |          9 |        368 |          7 |         35 |        410 |
+| app (Files)                                                                                               |          3 |        110 |          3 |         11 |        124 |
+| app\(protected)                                                                                           |          3 |        181 |          3 |         16 |        200 |
+| app\(protected)\administration                                                                            |          2 |        110 |          2 |         11 |        123 |
+| app\(protected)\administration (Files)                                                                    |          1 |         74 |          0 |          7 |         81 |
+| app\(protected)\administration\lobbydata                                                                  |          1 |         36 |          2 |          4 |         42 |
+| app\(protected)\administration\lobbydata\[id]                                                             |          1 |         36 |          2 |          4 |         42 |
+| app\(protected)\dashboard                                                                                 |          1 |         71 |          1 |          5 |         77 |
+| app\api                                                                                                   |          1 |          1 |          0 |          1 |          2 |
+| app\api\auth                                                                                              |          1 |          1 |          0 |          1 |          2 |
+| app\api\auth\[...nextauth]                                                                                |          1 |          1 |          0 |          1 |          2 |
+| app\user                                                                                                  |          2 |         76 |          1 |          7 |         84 |
+| app\user\signin                                                                                           |          1 |         38 |          1 |          3 |         42 |
+| app\user\signup                                                                                           |          1 |         38 |          0 |          4 |         42 |
+| components                                                                                                |         52 |      3,397 |        100 |        350 |      3,847 |
+| components (Files)                                                                                        |          1 |          7 |          0 |          3 |         10 |
+| components\Dashboard                                                                                      |         17 |      1,121 |         88 |         76 |      1,285 |
+| components\Dashboard\AdminPanel                                                                           |          7 |        557 |         53 |         34 |        644 |
+| components\Dashboard\AdminPanel\CreateEvent                                                               |          2 |        191 |         42 |         12 |        245 |
+| components\Dashboard\AdminPanel\LobbyInfo                                                                 |          2 |        146 |         10 |         10 |        166 |
+| components\Dashboard\AdminPanel\ViewLobbies                                                               |          3 |        220 |          1 |         12 |        233 |
+| components\Dashboard\DashboardNav                                                                         |          1 |         26 |          1 |          3 |         30 |
+| components\Dashboard\DashboardTabs                                                                        |          3 |        143 |         14 |         13 |        170 |
+| components\Dashboard\DashboardTabs (Files)                                                                |          1 |         32 |          2 |          3 |         37 |
+| components\Dashboard\DashboardTabs\EditProfile                                                            |          2 |        111 |         12 |         10 |        133 |
+| components\Dashboard\LobbyBanner                                                                          |          4 |        264 |          1 |         18 |        283 |
+| components\Dashboard\SideMenu                                                                             |          2 |        131 |         19 |          8 |        158 |
+| components\LandingPage                                                                                    |          8 |        311 |          4 |         32 |        347 |
+| components\LandingPage\FAQ                                                                                |          1 |         30 |          0 |          3 |         33 |
+| components\LandingPage\Footer                                                                             |          1 |         29 |          0 |          3 |         32 |
+| components\LandingPage\Hero                                                                               |          2 |         92 |          4 |         12 |        108 |
+| components\LandingPage\MobileApp                                                                          |          1 |         10 |          0 |          3 |         13 |
+| components\LandingPage\SubHero                                                                            |          1 |         58 |          0 |          4 |         62 |
+| components\LandingPage\TopUp                                                                              |          2 |         92 |          0 |          7 |         99 |
+| components\NavBar                                                                                         |          3 |        142 |          5 |          9 |        156 |
+| components\SignInForm                                                                                     |          1 |        113 |          0 |          6 |        119 |
+| components\SignUpForm                                                                                     |          1 |        162 |          0 |          7 |        169 |
+| components\ui                                                                                             |         21 |      1,541 |          3 |        217 |      1,761 |
+| lib                                                                                                       |         13 |        475 |         10 |         59 |        544 |
+| lib (Files)                                                                                               |          3 |        134 |          0 |         14 |        148 |
+| lib\actions                                                                                               |          8 |        285 |          2 |         37 |        324 |
+| lib\mongoDB                                                                                               |          2 |         56 |          8 |          8 |         72 |
+| public                                                                                                    |          2 |          2 |          0 |          0 |          2 |
+| schemas                                                                                                   |          1 |         40 |          0 |          4 |         44 |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                  | language           | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| s:\ProjectFiles\React\project-battle-lobby\README.md                                                      | Markdown           |         23 |          0 |         14 |         37 |
+| s:\ProjectFiles\React\project-battle-lobby\app\(protected)\administration\lobbydata\[id]\page.tsx         | TypeScript JSX     |         36 |          2 |          4 |         42 |
+| s:\ProjectFiles\React\project-battle-lobby\app\(protected)\administration\page.tsx                        | TypeScript JSX     |         74 |          0 |          7 |         81 |
+| s:\ProjectFiles\React\project-battle-lobby\app\(protected)\dashboard\page.tsx                             | TypeScript JSX     |         71 |          1 |          5 |         77 |
+| s:\ProjectFiles\React\project-battle-lobby\app\api\auth\[...nextauth]\route.ts                            | TypeScript         |          1 |          0 |          1 |          2 |
+| s:\ProjectFiles\React\project-battle-lobby\app\globals.css                                                | CSS                |         48 |          0 |          4 |         52 |
+| s:\ProjectFiles\React\project-battle-lobby\app\layout.tsx                                                 | TypeScript JSX     |         35 |          3 |          5 |         43 |
+| s:\ProjectFiles\React\project-battle-lobby\app\page.tsx                                                   | TypeScript JSX     |         27 |          0 |          2 |         29 |
+| s:\ProjectFiles\React\project-battle-lobby\app\user\signin\page.tsx                                       | TypeScript JSX     |         38 |          1 |          3 |         42 |
+| s:\ProjectFiles\React\project-battle-lobby\app\user\signup\page.tsx                                       | TypeScript JSX     |         38 |          0 |          4 |         42 |
+| s:\ProjectFiles\React\project-battle-lobby\auth.config.ts                                                 | TypeScript         |         39 |          1 |          3 |         43 |
+| s:\ProjectFiles\React\project-battle-lobby\auth.ts                                                        | TypeScript         |         20 |          4 |          4 |         28 |
+| s:\ProjectFiles\React\project-battle-lobby\components.json                                                | JSON               |         17 |          0 |          0 |         17 |
+| s:\ProjectFiles\React\project-battle-lobby\components\AuthProvider.tsx                                    | TypeScript JSX     |          7 |          0 |          3 |         10 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\CreateEvent\CreateEvent.tsx    | TypeScript JSX     |         11 |          0 |          3 |         14 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\CreateEvent\EventForm.tsx      | TypeScript JSX     |        180 |         42 |          9 |        231 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\LobbyInfo\DownloadButton.tsx   | TypeScript JSX     |         38 |          0 |          4 |         42 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\LobbyInfo\LobbyInfo.tsx        | TypeScript JSX     |        108 |         10 |          6 |        124 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\ViewLobbies\LobbyTable.tsx     | TypeScript JSX     |         98 |          0 |          3 |        101 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\ViewLobbies\ModifyDilaogue.tsx | TypeScript JSX     |        105 |          1 |          6 |        112 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\AdminPanel\ViewLobbies\ViewLobbies.tsx    | TypeScript JSX     |         17 |          0 |          3 |         20 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\DashboardNav\DashboardNav.tsx             | TypeScript JSX     |         26 |          1 |          3 |         30 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\DashboardTabs\DashboardHome.tsx           | TypeScript JSX     |         32 |          2 |          3 |         37 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\DashboardTabs\EditProfile\EditForm.tsx    | TypeScript JSX     |         95 |          3 |          6 |        104 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\DashboardTabs\EditProfile\EditProfile.tsx | TypeScript JSX     |         16 |          9 |          4 |         29 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\LobbyBanner\CodeDisplay.tsx               | TypeScript JSX     |         47 |          0 |          3 |         50 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\LobbyBanner\CountDown.tsx                 | TypeScript JSX     |         28 |          0 |          8 |         36 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\LobbyBanner\EntranceDialogue.tsx          | TypeScript JSX     |         80 |          0 |          3 |         83 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\LobbyBanner\LobbyBanner.tsx               | TypeScript JSX     |        109 |          1 |          4 |        114 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\SideMenu\SideMenu.tsx                     | TypeScript JSX     |         83 |         12 |          6 |        101 |
+| s:\ProjectFiles\React\project-battle-lobby\components\Dashboard\SideMenu\SlideMenu.tsx                    | TypeScript JSX     |         48 |          7 |          2 |         57 |
+| s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\FAQ\FAQsection.tsx                      | TypeScript JSX     |         30 |          0 |          3 |         33 |
+| s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\Footer\FooterSection.tsx                | TypeScript JSX     |         29 |          0 |          3 |         32 |
+| s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\Hero\Hero.tsx                           | TypeScript JSX     |         27 |          0 |          3 |         30 |
+| s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\Hero\ImageSlideshow.tsx                 | TypeScript JSX     |         65 |          4 |          9 |         78 |
+| s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\MobileApp\MobileApp.tsx                 | TypeScript JSX     |         10 |          0 |          3 |         13 |
+| s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\SubHero\SubHero.tsx                     | TypeScript JSX     |         58 |          0 |          4 |         62 |
+| s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\TopUp\TopUpCard.tsx                     | TypeScript JSX     |         74 |          0 |          4 |         78 |
+| s:\ProjectFiles\React\project-battle-lobby\components\LandingPage\TopUp\TopUpHome.tsx                     | TypeScript JSX     |         18 |          0 |          3 |         21 |
+| s:\ProjectFiles\React\project-battle-lobby\components\NavBar\MobileMenu.tsx                               | TypeScript JSX     |         47 |          5 |          3 |         55 |
+| s:\ProjectFiles\React\project-battle-lobby\components\NavBar\Navbar.tsx                                   | TypeScript JSX     |         64 |          0 |          3 |         67 |
+| s:\ProjectFiles\React\project-battle-lobby\components\NavBar\UserSection.tsx                              | TypeScript JSX     |         31 |          0 |          3 |         34 |
+| s:\ProjectFiles\React\project-battle-lobby\components\SignInForm\SignInForm.tsx                           | TypeScript JSX     |        113 |          0 |          6 |        119 |
+| s:\ProjectFiles\React\project-battle-lobby\components\SignUpForm\SignUpForm.tsx                           | TypeScript JSX     |        162 |          0 |          7 |        169 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\accordion.tsx                                    | TypeScript JSX     |         50 |          0 |          8 |         58 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\alert-dialog.tsx                                 | TypeScript JSX     |        127 |          0 |         15 |        142 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\avatar.tsx                                       | TypeScript JSX     |         44 |          0 |          7 |         51 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\button.tsx                                       | TypeScript JSX     |         51 |          0 |          6 |         57 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\calendar.tsx                                     | TypeScript JSX     |         67 |          0 |          6 |         73 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\card.tsx                                         | TypeScript JSX     |         68 |          0 |          9 |         77 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\carousel.tsx                                     | TypeScript JSX     |        232 |          0 |         31 |        263 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\dialog.tsx                                       | TypeScript JSX     |        109 |          0 |         14 |        123 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\form.tsx                                         | TypeScript JSX     |        152 |          0 |         25 |        177 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\input.tsx                                        | TypeScript JSX     |         21 |          0 |          5 |         26 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\label.tsx                                        | TypeScript JSX     |         21 |          0 |          6 |         27 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\popover.tsx                                      | TypeScript JSX     |         26 |          0 |          8 |         34 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\scroll-area.tsx                                  | TypeScript JSX     |         43 |          0 |          6 |         49 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\select.tsx                                       | TypeScript JSX     |        151 |          0 |         14 |        165 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\sheet.tsx                                        | TypeScript JSX     |        125 |          0 |         16 |        141 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\sonner.tsx                                       | TypeScript JSX     |         26 |          0 |          6 |         32 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\switch.tsx                                       | TypeScript JSX     |         25 |          0 |          5 |         30 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\table.tsx                                        | TypeScript JSX     |        110 |          0 |         11 |        121 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\tabs.tsx                                         | TypeScript JSX     |         45 |          3 |          8 |         56 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\ticket-chip.tsx                                  | TypeScript JSX     |         25 |          0 |          3 |         28 |
+| s:\ProjectFiles\React\project-battle-lobby\components\ui\tooltip.tsx                                      | TypeScript JSX     |         23 |          0 |          8 |         31 |
+| s:\ProjectFiles\React\project-battle-lobby\environments.d.ts                                              | TypeScript         |          9 |          1 |          2 |         12 |
+| s:\ProjectFiles\React\project-battle-lobby\lib\actions\CreateLobby.ts                                     | TypeScript         |         46 |          0 |          4 |         50 |
+| s:\ProjectFiles\React\project-battle-lobby\lib\actions\EditProfile.ts                                     | TypeScript         |         33 |          0 |          3 |         36 |
+| s:\ProjectFiles\React\project-battle-lobby\lib\actions\FetchLobbies.ts                                    | TypeScript         |         20 |          0 |          4 |         24 |
+| s:\ProjectFiles\React\project-battle-lobby\lib\actions\FetchLobbyWithID.ts                                | TypeScript         |         23 |          0 |          5 |         28 |
+| s:\ProjectFiles\React\project-battle-lobby\lib\actions\JoinLobby.ts                                       | TypeScript         |         59 |          1 |          7 |         67 |
+| s:\ProjectFiles\React\project-battle-lobby\lib\actions\LoginAuth.ts                                       | TypeScript         |         24 |          0 |          5 |         29 |
+| s:\ProjectFiles\React\project-battle-lobby\lib\actions\ModifyLobby.ts                                     | TypeScript         |         44 |          0 |          5 |         49 |
+| s:\ProjectFiles\React\project-battle-lobby\lib\actions\SignUpAuth.ts                                      | TypeScript         |         36 |          1 |          4 |         41 |
+| s:\ProjectFiles\React\project-battle-lobby\lib\constants.ts                                               | TypeScript         |         64 |          0 |          4 |         68 |
+| s:\ProjectFiles\React\project-battle-lobby\lib\mongoDB\database.ts                                        | TypeScript         |         10 |          0 |          2 |         12 |
+| s:\ProjectFiles\React\project-battle-lobby\lib\mongoDB\dbmodels.ts                                        | TypeScript         |         46 |          8 |          6 |         60 |
+| s:\ProjectFiles\React\project-battle-lobby\lib\types.ts                                                   | TypeScript         |         58 |          0 |          6 |         64 |
+| s:\ProjectFiles\React\project-battle-lobby\lib\utils.ts                                                   | TypeScript         |         12 |          0 |          4 |         16 |
+| s:\ProjectFiles\React\project-battle-lobby\next.config.mjs                                                | JavaScript         |          2 |          1 |          2 |          5 |
+| s:\ProjectFiles\React\project-battle-lobby\package.json                                                   | JSON               |         61 |          0 |          1 |         62 |
+| s:\ProjectFiles\React\project-battle-lobby\pnpm-lock.yaml                                                 | YAML               |      2,248 |          0 |        273 |      2,521 |
+| s:\ProjectFiles\React\project-battle-lobby\postcss.config.js                                              | JavaScript         |          6 |          0 |          1 |          7 |
+| s:\ProjectFiles\React\project-battle-lobby\public\next.svg                                                | XML                |          1 |          0 |          0 |          1 |
+| s:\ProjectFiles\React\project-battle-lobby\public\vercel.svg                                              | XML                |          1 |          0 |          0 |          1 |
+| s:\ProjectFiles\React\project-battle-lobby\schemas\UserSchemas.ts                                         | TypeScript         |         40 |          0 |          4 |         44 |
+| s:\ProjectFiles\React\project-battle-lobby\tailwind.config.ts                                             | TypeScript         |         78 |          0 |          2 |         80 |
+| s:\ProjectFiles\React\project-battle-lobby\tsconfig.json                                                  | JSON with Comments |         26 |          0 |          1 |         27 |
+| Total                                                                                                     |                    |      6,811 |        124 |        751 |      7,686 |
++-----------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

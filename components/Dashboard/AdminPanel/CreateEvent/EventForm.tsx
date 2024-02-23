@@ -17,6 +17,7 @@ import { IoPeople, IoTicket } from 'react-icons/io5';
 import { toast } from 'sonner';
 import { CreateLobby } from '@/lib/actions/CreateLobby';
 import { useRouter } from 'next/navigation';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 const EventForm = () => {
   const lobbyTitle = useRef('');
@@ -77,8 +78,7 @@ const EventForm = () => {
   };
 
   return (
-    <div>
-      <h1>form</h1>
+    <ScrollArea className='h-[75vh]'>
       <div className='w-11/12 mx-auto border border-border rounded-3xl p-6'>
         <form onSubmit={formOnSubmit}>
           <label className={labelClasses}>
@@ -151,7 +151,7 @@ const EventForm = () => {
             </label>
           </div>
           <label>Lobby Start Time and Date</label>
-          <div className='flex gap-5'>
+          <div className='flex md:gap-5 flex-col md:flex-row gap-2'>
             <label className={labelClasses}>
               <Input
                 type='time'
@@ -161,7 +161,7 @@ const EventForm = () => {
                 // onChange={(e) => console.log(e.target.value)}
               />
             </label>
-            <label className={labelClasses}>
+            <label className={cn(labelClasses, '')}>
               <Popover>
                 <PopoverTrigger asChild>
                   <Button
@@ -223,7 +223,7 @@ const EventForm = () => {
           <Button>Submit</Button>
         </form>
       </div>
-    </div>
+    </ScrollArea>
   );
 };
 

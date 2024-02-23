@@ -23,6 +23,15 @@ export async function LoginAuth(
     });
     return { status: 'success', ok: true };
   } catch (error) {
-    if (error instanceof AuthError) return { status: error.message, ok: false };
+    if (error instanceof AuthError) {
+      switch (error.type) {
+        case 'CredentialsSignin':
+          return { status: 'Invalid Email or Password', ok: false };
+
+        default:
+          return { status: 'Something Went Wrong', ok: false };
+      }
+    }
+    // throw error;
   }
 }

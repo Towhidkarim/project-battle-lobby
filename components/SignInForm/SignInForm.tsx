@@ -11,6 +11,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { LoginAuth } from '@/lib/actions/LoginAuth';
 import { toast } from 'sonner';
 import { redirect, useRouter } from 'next/navigation';
+import { ImSpinner9 } from 'react-icons/im';
 import {
   Form,
   FormControl,
@@ -25,6 +26,8 @@ const SignInForm = () => {
   const email = useRef('');
   const password = useRef('');
   const router = useRouter();
+  const [isPending, setIsPending] = useState(false);
+
   const form = useForm<z.infer<typeof LoginSchema>>({
     resolver: zodResolver(LoginSchema),
     defaultValues: {
@@ -35,6 +38,7 @@ const SignInForm = () => {
 
   const formOnsubmit = async (values: z.infer<typeof LoginSchema>) => {
     startTransition(() => {
+      setIsPending(true);
       const res = LoginAuth(values);
       res.then((result) => {
         if (result?.ok) {
@@ -43,12 +47,16 @@ const SignInForm = () => {
             duration: 3000,
           });
           router.push('/dashboard');
+        } else {
+          toast('Error!', {
+            description: result?.status,
+            duration: 3000,
+          });
         }
+        setIsPending(false);
       });
     });
   };
-
-  const [pending, setPending] = useState(false);
 
   return (
     <Form {...form}>
@@ -67,6 +75,7 @@ const SignInForm = () => {
               <FormLabel className='text-base py-2'>Email</FormLabel>
               <FormControl>
                 <Input
+                  disabled={isPending}
                   className='p-6 text-base rounded-2xl'
                   {...field}
                   type='email'
@@ -86,6 +95,7 @@ const SignInForm = () => {
               <FormLabel className='text-base py-2'>Password</FormLabel>
               <FormControl>
                 <Input
+                  disabled={isPending}
                   {...field}
                   className='p-6 text-base rounded-2xl'
                   type='password'
@@ -97,18 +107,28 @@ const SignInForm = () => {
           )}
         />
         <br />
-        <Button type='submit' className='w-full text-lg py-6 rounded-2xl'>
-          Login
+        <Button
+          disabled={isPending}
+          type='submit'
+          className='w-full text-lg py-6 rounded-2xl'
+        >
+          {isPending ? (
+            <span className='animate-spin'>
+              <ImSpinner9 />
+            </span>
+          ) : (
+            'Login'
+          )}
         </Button>
-        <Link href='#' className='py-4 hover:opacity-90 transition'>
+        {/* <Link href='#' className='py-4 hover:opacity-90 transition'>
           Forgot Password?{' '}
-        </Link>
+        </Link> */}
         <br />
         <Button
           asChild
           className='md:hidden font-semibold py-6 rounded-xl text-base'
         >
-          <Link href='#'>Create New Account</Link>
+          <Link href='/user/signup'>Create New Account</Link>
         </Button>
       </form>
     </Form>

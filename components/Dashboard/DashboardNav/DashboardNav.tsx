@@ -6,7 +6,7 @@ const DashboardNav = async ({ userData }: { userData: TUser }) => {
 
   return (
     <nav className='h-16  flex justify-between px-5 items-center my-6'>
-      <span className='text-2xl flex gap-5 justify-center items-center font-semibold'>
+      <span className='md:text-2xl text-lg flex gap-5 justify-center items-center font-semibold'>
         <label
           htmlFor='slideMenu'
           className='lg:hidden opacity-0 active:opacity-0 text-4xl'
