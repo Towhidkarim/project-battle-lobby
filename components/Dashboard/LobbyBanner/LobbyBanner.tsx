@@ -85,14 +85,20 @@ const LobbyBanner = ({
             </div>
           </div>
           {!userData.lobbiesRegistered.includes(_id.toString()) ? (
-            <EntranceDialogue
-              lobbyID={_id?.toString() ?? ''}
-              caption={caption}
-              entryFee={entryFee}
-              gameName={gameName}
-              lobbyTitle={lobbyTitle}
-              startTime={format(lobbyStartTime, 'Pp')}
-            />
+            currentlyEntered >= maxCapacity ? (
+              <span className='w-full my-3 bg-background/75 mx-auto rounded-xl p-4 text-center font-semibold text-white'>
+                Lobby Full!
+              </span>
+            ) : (
+              <EntranceDialogue
+                lobbyID={_id?.toString() ?? ''}
+                caption={caption}
+                entryFee={entryFee}
+                gameName={gameName}
+                lobbyTitle={lobbyTitle}
+                startTime={format(lobbyStartTime, 'Pp')}
+              />
+            )
           ) : !credentialsAvailable ? (
             <span className='w-full my-3 bg-background/75 mx-auto rounded-xl p-4 text-center font-semibold text-white'>
               Registered, Waiting for code

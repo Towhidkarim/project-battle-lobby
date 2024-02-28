@@ -1,4 +1,4 @@
-import z from 'zod';
+import z, { boolean } from 'zod';
 
 export const UserTypeSchema = z.object({
   _id: z.string().optional(),
@@ -61,3 +61,37 @@ export const LobbyTypeSchema = z.object({
 });
 
 export type TLobby = z.infer<typeof LobbyTypeSchema>;
+
+const phoneNumberRegEx = /^[0][1-9]\d{9}$|^[1-9]\d{9}$/;
+export const SiteDataSchema = z.object({
+  _id: z.string().optional(),
+  packageInfo: z.array(
+    z.object({
+      name: z.string().min(3),
+      description: z.string().min(3).optional(),
+      price: z.number().min(0),
+    })
+  ),
+  activeTransactionNumbers: z.array(
+    z.object({
+      number: z.string().regex(phoneNumberRegEx, 'Invalid Mobile Number'),
+      type: z.string(),
+    })
+  ),
+});
+
+export type TSiteData = z.infer<typeof SiteDataSchema>;
+
+const PurchaseRequestSchema = z.object({
+  _id: z.string().optional(),
+  userName: z.string(),
+  email: z.string().email(),
+  packageName: z.string(),
+  packagePrice: z.number().min(0),
+  transNumber: z.string(),
+  method: z.string(),
+  transactionID: z.string(),
+  approved: z.boolean(),
+});
+
+export type TPurchaseRequest = z.infer<typeof PurchaseRequestSchema>;

@@ -9,10 +9,15 @@ import { TUser } from '@/lib/types';
 import { TabsContent } from '@/components/ui/tabs';
 import { redirect } from 'next/navigation';
 import { MdDashboard, MdEvent } from 'react-icons/md';
+import { IoIosOptions } from 'react-icons/io';
 import CreateEvent from '@/components/Dashboard/AdminPanel/CreateEvent/CreateEvent';
 import { SlideMenu } from '@/components/Dashboard/SideMenu/SlideMenu';
 import { FaList } from 'react-icons/fa6';
 import ViewLobbies from '@/components/Dashboard/AdminPanel/ViewLobbies/ViewLobbies';
+import Generals from '@/components/Dashboard/AdminPanel/Generals/Generals';
+import { IoOptions } from 'react-icons/io5';
+import TopupRequests from '@/components/Dashboard/AdminPanel/TopupRequests/TopupRequests';
+import { FaCashRegister } from 'react-icons/fa6';
 
 const Home = async () => {
   const session = await auth();
@@ -46,6 +51,16 @@ const Home = async () => {
       title: 'View Lobbies',
       icon: <FaList />,
       component: <ViewLobbies />,
+    },
+    {
+      title: 'General Options',
+      icon: <IoOptions />,
+      component: <Generals />,
+    },
+    {
+      title: 'Transactions',
+      icon: <FaCashRegister />,
+      component: <TopupRequests />,
     },
   ];
 

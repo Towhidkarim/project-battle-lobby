@@ -29,7 +29,7 @@ const SubHero = () => {
         It's Easy to Get Started.
       </h1>
       <p className='text-center text-lg md:text-xl text-muted-foreground my-6 mb-10'>
-        We help you earn money while you play
+        Improve your KD/A and earn at the same time
       </p>
       <div className='grid place-items-center max-w-[40rem] mx-auto grid-flow-row md:grid-cols-2 gap-10'>
         {cardContent.map((value, index) => (

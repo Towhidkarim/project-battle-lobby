@@ -4,17 +4,13 @@ import { FaAngleDown } from 'react-icons/fa6';
 import Link from 'next/link';
 import { MobileMenu } from './MobileMenu';
 import UserSection from './UserSection';
+import Logo from '../Logo';
 
 const Navbar = () => {
   return (
     <nav className='w-full h-14 border-b-[1px] border-border grid place-items-center text-lg'>
       <div className='container mx-auto w-full flex flex-row items-center justify-between'>
-        <h1 className='text-xl'>
-          <span className='mr-3 md:hidden '>
-            <MobileMenu />
-          </span>
-          Battle<span className='font-bold'>Lobby</span>
-        </h1>
+        <Logo />
         <div className='md:flex hidden  font-semibold'>
           <Button
             variant='ghost'

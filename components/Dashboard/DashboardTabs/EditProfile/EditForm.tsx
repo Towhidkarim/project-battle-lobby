@@ -7,8 +7,7 @@ import { TUser } from '@/lib/types';
 import { cn } from '@/lib/utils';
 import { UserCompletionSchema } from '@/schemas/UserSchemas';
 import { useRouter } from 'next/navigation';
-import React from 'react';
-import { useRef } from 'react';
+import { useState, useRef } from 'react';
 import { toast } from 'sonner';
 
 const EditForm = ({ userData }: { userData: TUser }) => {
@@ -17,7 +16,7 @@ const EditForm = ({ userData }: { userData: TUser }) => {
   const { userName, email, ign, phoneNumber, uid } = userData;
   const uidRef = useRef('');
   const ignRef = useRef('');
-  const phoneNumberRef = useRef(phoneNumber ?? '');
+  const phoneNumberRef = useRef('');
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -64,10 +63,10 @@ const EditForm = ({ userData }: { userData: TUser }) => {
         Mobile Number
         <Input
           type='text'
-          //   placeholder='01xxxxxxxxx'
-          placeholder={phoneNumber ?? '01xxxxxxxxx'}
+          defaultValue={phoneNumber ?? '01xxxxxxxxx'}
+          placeholder={phoneNumber ?? ''}
           className={cn(inputClasses)}
-          onChange={(e) => (ignRef.current = e.target.value)}
+          onChange={(e) => (phoneNumberRef.current = e.target.value)}
         />
       </label>
       <label className={cn(labelClasses)}>
@@ -76,6 +75,7 @@ const EditForm = ({ userData }: { userData: TUser }) => {
           type='text'
           //   placeholder='Your ign here'
           placeholder={ign ?? 'Your IGN here'}
+          defaultValue={ign ?? ''}
           className={cn(inputClasses)}
           onChange={(e) => (ignRef.current = e.target.value)}
         />
@@ -86,6 +86,7 @@ const EditForm = ({ userData }: { userData: TUser }) => {
           type='text'
           //   placeholder='Your UID from game here'
           placeholder={uid ?? 'Your UID here'}
+          defaultValue={uid ?? ''}
           className={cn(inputClasses)}
           onChange={(e) => (uidRef.current = e.target.value)}
         />

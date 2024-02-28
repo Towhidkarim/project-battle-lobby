@@ -16,7 +16,7 @@ export default function Home() {
       <br />
       <SubHero />
       <br /> <br />
-      <TopUpHome />
+      {/* <TopUpHome /> */}
       <br />
       <MobileApp />
       <br />

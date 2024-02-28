@@ -9,6 +9,7 @@ import { FaSignOutAlt } from 'react-icons/fa';
 import { signOut } from 'next-auth/react';
 import { MdAdminPanelSettings } from 'react-icons/md';
 import Link from 'next/link';
+import Logo from '@/components/Logo';
 
 const SideMenu = ({
   userData,
@@ -25,10 +26,7 @@ const SideMenu = ({
 
   return (
     <TabsList className='relative flex flex-col justify-start py-8 items-center h-full'>
-      <h1 className='text-xl'>
-        Battle
-        <span className='font-semibold'>Lobby</span>
-      </h1>
+      <Logo />
       <span className='h-10' />
       <Avatar className='w-20 h-20 text-4xl'>
         <AvatarFallback>{userName[0]}</AvatarFallback>
@@ -55,25 +53,12 @@ const SideMenu = ({
       </Button>
       <span className='h-6' />
       <div className='flex flex-col w-full justify-start items-center'>
-        {/* <TabsTrigger
-          value='Home'
-          className='h-12 w-3/5 hover:font-extrabold hover:scale-105 transition-all py-3'
-        >
-          Home
-        </TabsTrigger>
-        <TabsTrigger value='parti' className='h-12 w-3/5 py-3'>
-          Participations
-        </TabsTrigger>
-        <TabsTrigger value='profile' className='h-12 w-3/5 py-3'>
-          Profile
-        </TabsTrigger> */}
-
         {tabsData.map((data, index) => (
           <TabsTrigger
             value={data.title}
             key={index}
             className={cn(
-              'h-12 inline-flex justify-start gap-3 items-center font-light w-3/5 min-w-64 data-[state=active]:text-lg my-1 px-10',
+              'h-12 inline-flex justify-start gap-3 items-center font-light w-4/5 min-w-64 data-[state=active]:text-lg my-1 px-10',
               'data-[state=active]:font-extrabold hover:bg-foreground/5 rounded-xl transition-all py-3 data-[state=active]:bg-foreground/10 '
             )}
           >

@@ -1,5 +1,11 @@
 import { model, models, Schema } from 'mongoose';
-import { LobbyRegistrationTypeSchema, TLobby, TUser } from '@/lib/types';
+import {
+  LobbyRegistrationTypeSchema,
+  TLobby,
+  TPurchaseRequest,
+  TSiteData,
+  TUser,
+} from '@/lib/types';
 import { number, z } from 'zod';
 
 const UserSchema = new Schema<TUser>({
@@ -18,15 +24,6 @@ const UserSchema = new Schema<TUser>({
 });
 
 export const Users = models?.Users || model<TUser>('Users', UserSchema);
-
-// const registrationDataSchema = new Schema<
-//   z.infer<typeof LobbyRegistrationTypeSchema>
-// >({
-//   player_id: String,
-//   playerEmail: String,
-//   playerNumber: String,
-//   playerIGN: String,
-// });
 
 const LobbySchema = new Schema<TLobby>({
   caption: String,
@@ -57,3 +54,34 @@ const LobbySchema = new Schema<TLobby>({
 });
 
 export const Lobbies = models?.Lobbies || model<TLobby>('Lobbies', LobbySchema);
+
+const SiteDataSchema = new Schema<TSiteData>({
+  activeTransactionNumbers: [
+    {
+      number: { type: String },
+      type: { type: String },
+    },
+  ],
+  packageInfo: [
+    {
+      name: { type: String },
+      price: { type: Number },
+    },
+  ],
+});
+
+export const SiteData = models.SiteData || model('SiteData', SiteDataSchema);
+
+const PurchaseRequestSchema = new Schema<TPurchaseRequest>({
+  email: String,
+  packageName: String,
+  packagePrice: Number,
+  transNumber: String,
+  method: String,
+  userName: String,
+  transactionID: String,
+  approved: Boolean,
+});
+
+export const PurchaseRequests =
+  models.PurchaseRequests || model('PurchaseRequests', PurchaseRequestSchema);
