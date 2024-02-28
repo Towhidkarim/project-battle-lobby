@@ -19,19 +19,17 @@ export default async function Purchase() {
   }));
 
   return (
-    <main className='h-svh bg-background'>
+    <main className='min-h-svh w-screen bg-background overflow-hidden'>
       <Navbar />
-      <ScrollArea className='h-[90vh]'>
-        <div className='container mx-auto'>
-          <h1 className='md:text-4xl text-3xl my-4 font-semibold text-center'>
-            Purchase Token
-          </h1>
-          <PurchaseForm
-            transactionNumbers={transactionNumbers}
-            packageInfo={packageInfo}
-          />
-        </div>
-      </ScrollArea>
+      <div className='container mx-auto'>
+        <h1 className='md:text-4xl text-3xl my-4 font-semibold text-center'>
+          Purchase Token
+        </h1>
+        <PurchaseForm
+          transactionNumbers={transactionNumbers}
+          packageInfo={packageInfo}
+        />
+      </div>
     </main>
   );
 }

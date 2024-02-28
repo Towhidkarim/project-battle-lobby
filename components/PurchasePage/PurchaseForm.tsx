@@ -48,13 +48,13 @@ export default function PurchaseForm({
   return (
     <form
       onSubmit={onSubmit}
-      className='rounded-xl mx-2 w-full border border-border/80 p-6 py-6'
+      className='rounded-xl w-full mx-auto border border-border/80 p-4 '
     >
       <h1 className='text-xl '>Select Package</h1>
       <RadioGroup
         defaultValue='0'
         onValueChange={(value) => (packageRef.current = Number(value))}
-        className='flex gap-2 justify-start w-full'
+        className='flex gap-2 justify-start flex-wrap'
       >
         {packageInfo?.map((value, index) => (
           <label key={index} htmlFor={`r${index}`}>
@@ -93,7 +93,7 @@ export default function PurchaseForm({
       <RadioGroup
         defaultValue='0'
         onValueChange={(value) => (numberRef.current = Number(value))}
-        className='flex gap-2 flex-wrap justify-start w-full'
+        className='flex gap-2 flex-wrap justify-start'
       >
         {transactionNumbers?.map((value, index) => (
           <label key={index} htmlFor={`p${index}`}>
