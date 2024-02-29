@@ -8,7 +8,7 @@ import Logo from '../Logo';
 
 const Navbar = () => {
   return (
-    <nav className='w-full h-14 border-b-[1px] border-border grid place-items-center text-lg'>
+    <nav className='w-screen overflow-hidden h-14 border-b-[1px] border-border grid place-items-center text-lg'>
       <div className='container mx-auto w-full flex flex-row items-center justify-between'>
         <Logo />
         <div className='md:flex hidden  font-semibold'>

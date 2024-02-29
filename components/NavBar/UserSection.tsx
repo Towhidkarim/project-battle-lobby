@@ -22,7 +22,7 @@ const UserSection = () => {
       </Button>
       <Button
         asChild
-        className='rounded-xl font-bold hidden md:block text-foreground'
+        className='rounded-xl scale-90 lg:scale-100 font-bold hidden md:block text-foreground'
       >
         <Link href='/user/signup'>Sign Up</Link>
       </Button>

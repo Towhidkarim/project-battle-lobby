@@ -7,15 +7,6 @@ import { TUser } from '@/lib/types';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 const DashboardHome = async ({ userData }: { userData: TUser }) => {
-  const LobbyData = {
-    gameName: 'Dota 2',
-    lobyDescription: 'some small description ',
-    entryFee: 50,
-    maxCapacity: 10,
-    currentlyEntered: 6,
-    startTime: new Date().getTime(),
-    endTime: new Date().getTime() + 8640000,
-  };
   const lobbies = await FetchLobbies(true);
   // if (lobbies?.ok) console.log(lobbies);
   return (
