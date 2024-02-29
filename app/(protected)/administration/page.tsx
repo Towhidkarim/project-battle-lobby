@@ -58,7 +58,7 @@ const Home = async () => {
       component: <Generals />,
     },
     {
-      title: 'Transactions',
+      title: 'Funds',
       icon: <FaCashRegister />,
       component: <TopupRequests />,
     },

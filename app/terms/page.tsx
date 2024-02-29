@@ -1,3 +1,4 @@
+import FooterSection from '@/components/LandingPage/Footer/FooterSection';
 import Navbar from '@/components/NavBar/Navbar';
 import React from 'react';
 
@@ -151,6 +152,7 @@ export default function Page() {
         contact us: • By email: management@battlelobby.com
         {/*  prettier-ignore-end */}
       </p>
+      <FooterSection />
     </main>
   );
 }

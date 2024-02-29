@@ -31,7 +31,7 @@ const Navbar = () => {
             className='font-bold rounded-xl lg:text-xl text-lg text-foreground/70'
             asChild
           >
-            <Link href='/'>About us</Link>
+            <Link href='/about'>About us</Link>
           </Button>
         </div>
         <div className='flex flex-row gap-2'>

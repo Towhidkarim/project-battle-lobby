@@ -1,9 +1,9 @@
 export const MenuItems = [
   { title: 'Home', url: '/' },
-  { title: 'Dashboard', url: '/' },
-  { title: 'Schedule', url: '/' },
+  { title: 'Dashboard', url: '/dashboard' },
+  { title: 'Schedule', url: '/dashboard' },
   { title: 'Contact Support', url: '/' },
-  { title: 'About Us', url: '/' },
+  { title: 'About Us', url: 'about' },
 ];
 
 export const PricingTiers = [
@@ -50,18 +50,17 @@ export const footerInfo = [
     { title: 'Contact Us', url: '/' },
   ],
   [
-    { title: 'Dashboard', url: '/' },
+    { title: 'Dashboard', url: '/dashboard' },
     { title: 'How To Use', url: '/' },
     { title: 'Information', url: '/' },
   ],
   [
-    { title: 'Terms of Use', url: '/' },
-    { title: 'Privacy Policy', url: '/' },
+    { title: 'Terms of Use', url: '/terms' },
+    { title: 'Privacy Policy', url: '/terms' },
     { title: 'End User Agreement', url: '/' },
   ],
   [
     { title: 'Facebook', url: '/' },
     { title: 'Telegram', url: '/' },
-    { title: 'End User Agreement', url: '/' },
   ],
 ];
