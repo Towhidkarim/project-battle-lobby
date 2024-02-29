@@ -18,6 +18,8 @@ export async function JoinLobby(lobbyID: string) {
       return { ok: false, message: 'Lobby Not found' };
     if (lobbyData.currentlyEntered >= lobbyData.maxCapacity)
       return { ok: false, message: 'Lobby Already Full' };
+    if (lobbyData.status === 'ended' || lobbyData.status === 'running')
+      return { ok: false, message: 'Registration Closed' };
     // console.log(lobbyData);
     const userInfo: TUser | null = await Users.findOne({
       email: session.user?.email,

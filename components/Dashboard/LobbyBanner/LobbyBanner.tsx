@@ -25,6 +25,7 @@ const LobbyBanner = ({
     registrationData,
     lobbyCreationTime,
     entryFee,
+    status,
     credentials,
     tags,
   } = lobbyData;
@@ -83,6 +84,7 @@ const LobbyBanner = ({
             ) : (
               <EntranceDialogue
                 lobbyID={_id?.toString() ?? ''}
+                status={status}
                 caption={caption}
                 entryFee={entryFee}
                 gameName={gameName}

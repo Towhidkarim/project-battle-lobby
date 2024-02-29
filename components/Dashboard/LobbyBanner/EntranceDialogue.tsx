@@ -25,6 +25,7 @@ export function EntranceDialogue({
   entryFee,
   caption,
   startTime,
+  status,
 }: {
   lobbyID: string;
   lobbyTitle: string;
@@ -32,6 +33,7 @@ export function EntranceDialogue({
   entryFee: number;
   caption: string;
   startTime: string;
+  status: 'recruiting' | 'running' | 'ended';
 }) {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
@@ -47,7 +49,7 @@ export function EntranceDialogue({
     <AlertDialog>
       <AlertDialogTrigger asChild>
         <Button
-          disabled={isLoading}
+          disabled={isLoading || status === 'running' || status === 'ended'}
           variant='outline'
           className='w-full my-6 border-white/50 hover:bg-background/75 hover:text-xl bg-background/50 font-bold text-lg active:scale-100 group-active:opacity-90 rounded-xl p-6 '
         >
