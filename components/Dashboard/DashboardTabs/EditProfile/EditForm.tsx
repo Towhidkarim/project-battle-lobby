@@ -14,24 +14,29 @@ const EditForm = ({ userData }: { userData: TUser }) => {
   const router = useRouter();
 
   const { userName, email, ign, phoneNumber, uid } = userData;
-  const uidRef = useRef('');
-  const ignRef = useRef('');
-  const phoneNumberRef = useRef('');
+  const uidRef = useRef(uid);
+  const ignRef = useRef(ign);
+  const phoneNumberRef = useRef(phoneNumber);
+  const [isPending, setIsPending] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsPending(true);
     const parsedData = UserCompletionSchema.safeParse({
       uid: uidRef.current,
       ign: ignRef.current,
       phoneNumber: phoneNumberRef.current,
     });
+    console.log(uidRef.current, ignRef.current, phoneNumberRef.current);
     if (!parsedData.success) {
       toast('Invalid Data');
+      setIsPending(false);
       return;
     }
     const { ign, phoneNumber, uid } = parsedData.data;
     const res = await EditProfile({ ign, phoneNumber, uid });
     toast(res.message);
+    setIsPending(false);
     router.refresh();
   };
   const labelClasses = 'my-3 ';
@@ -81,7 +86,7 @@ const EditForm = ({ userData }: { userData: TUser }) => {
         />
       </label>
       <label className={cn(labelClasses)}>
-        UID (UsreID):
+        UID (UserID):
         <Input
           type='text'
           //   placeholder='Your UID from game here'
@@ -92,6 +97,7 @@ const EditForm = ({ userData }: { userData: TUser }) => {
         />
       </label>
       <Button
+        disabled={isPending}
         type='submit'
         className='w-full py-4 rounded-xl font-semibold text-lg'
       >
