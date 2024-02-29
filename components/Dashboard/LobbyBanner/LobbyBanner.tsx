@@ -14,17 +14,6 @@ const LobbyBanner = ({
   lobbyData: TLobby;
   userData: TUser;
 }) => {
-  const LobbyData = {
-    lobbyTitle: 'New Game Lobby',
-    gameName: 'Game Name',
-    caption: 'some small description ',
-    entryFee: 50,
-    maxCapacity: 10,
-    currentlyEntered: 6,
-    tags: ['FFA', '1vAll'],
-    startTime: new Date(),
-    endTime: new Date(Date.now() + 3600000),
-  };
   const {
     _id,
     lobbyTitle,
@@ -45,7 +34,7 @@ const LobbyBanner = ({
 
   return (
     <label className='group relative'>
-      <div className='mx-5 select-none cursor-pointer group-active:opacity-90 transition-all outline-foreground/30 relative border rounded-xl min-h-60 min-w-[80%] border-border overflow-hidden'>
+      <div className='mx-5 select-none cursor-pointer group-active:opacity-90 transition-all outline-foreground/30 relative border rounded-xl min-h-80 min-w-[80%] border-border overflow-hidden'>
         <Image
           alt='lobby'
           src={demoBanner}
@@ -53,10 +42,12 @@ const LobbyBanner = ({
         />
         <div className=' bg-gradient-to-r  from-black to-white h-full absolute w-full opacity-60'></div>
         <div className='p-4 z-10 absolute top-0 h-full flex flex-col justify-between w-full'>
-          <h1 className='font-bold my-2 text-2xl capitalize'>{lobbyTitle}</h1>
+          <h1 className='font-bold my-2 text-lg md:text-2xl capitalize'>
+            {lobbyTitle}
+          </h1>
           <p className='my-2'>{caption}</p>
-          <div className='w-full flex justify-between items-center'>
-            <div className='font-semibold text-base bg-background/60 md:text-lg outline outline-1 outline-foreground/40 rounded-2xl p-1 px-4 md:min-w-52 w-48 text-center '>
+          <div className='w-full flex-col gap-4 md:flex-row flex justify-between items-center'>
+            <div className='font-semibold text-base bg-background/60 md:text-lg outline outline-1 outline-foreground/40 rounded-2xl p-1 px-4 w-56 text-center '>
               <CountDown endTime={lobbyStartTime} />
             </div>
             <div className='flex text-sm gap-2 justify-center items-center'>
