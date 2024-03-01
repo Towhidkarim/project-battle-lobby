@@ -26,7 +26,7 @@ const DownloadButton = ({
     const worksheet = utils.json_to_sheet(playersData);
     utils.book_append_sheet(book, worksheet, lobbyTitle);
 
-    writeFile(book, lobbyTitle + ' ' + dateString + '.xlsx');
+    writeFile(book, 'PlayerData' + '_' + dateString + '.xlsx');
   };
   return (
     <Button
