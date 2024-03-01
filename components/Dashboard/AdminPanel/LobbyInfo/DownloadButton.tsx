@@ -1,9 +1,7 @@
 'use client';
+import { Button } from '@/components/ui/button';
 import { TLobbyRegistrationData } from '@/lib/types';
 import { utils, writeFile } from 'xlsx';
-import { Button } from '@/components/ui/button';
-import { useState, useEffect } from 'react';
-import { FetchLobbieyWithID } from '@/lib/actions/FetchLobbyWithID';
 
 const DownloadButton = ({
   data,
@@ -24,7 +22,7 @@ const DownloadButton = ({
   const downloadFunction = async () => {
     const book = utils.book_new();
     const worksheet = utils.json_to_sheet(playersData);
-    utils.book_append_sheet(book, worksheet, lobbyTitle);
+    utils.book_append_sheet(book, worksheet, 'DataSheet');
 
     writeFile(book, 'PlayerData' + '_' + dateString + '.xlsx');
   };
